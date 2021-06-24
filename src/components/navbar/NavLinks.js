@@ -6,7 +6,7 @@ const NavLinks = (props) => {
 
   const ClickMainHandler = () => {
     props.isMobile && props.onClickLink();
-    history.push('/');
+    history.push('/suscripcion');
   };
 
   const ClickSuscripcionHandler = () => {
@@ -17,7 +17,7 @@ const NavLinks = (props) => {
   return (
     <ul>
       <li onClick={ClickMainHandler}>
-        <Link to="/">Inicio</Link>
+        <Link to="/suscripcion">Inicio</Link>
       </li>
       <li onClick={ClickSuscripcionHandler}>
         <Link to="/suscripcion">Suscripción</Link>

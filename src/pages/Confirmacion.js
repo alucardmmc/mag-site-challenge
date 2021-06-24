@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import classes from './Confirmacion.module.css';
 
 const Confirmacion = () => {
-  const [store, dispatch] = useContext(StoreContext);
+  const [store] = useContext(StoreContext);
   const { isPremium, standardPlan, premiumPlan } = store;
 
   const plan = isPremium ? premiumPlan : standardPlan;

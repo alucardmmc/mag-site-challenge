@@ -18,7 +18,7 @@ const Datos = lazy(() => import('./pages/Datos'));
 const Confirmacion = lazy(() => import('./pages/Confirmacion'));
 
 function App() {
-  const [store, dispatch] = useContext(StoreContext);
+  const [store] = useContext(StoreContext);
   const { hasSubmitted } = store;
 
   return (
