@@ -15,10 +15,14 @@ const Datos = () => {
   const { isPremium, standardPlan, premiumPlan, planDetails } = store;
 
   const submitForm = () => {
+    dispatch({ type: types.formSubmitted });
     history.push('/confirmacion');
-  }
+  };
 
-  const { handleChange, values, handleSubmit, errors } = useForm(validateForm, submitForm);
+  const { handleChange, values, handleSubmit, errors } = useForm(
+    validateForm,
+    submitForm
+  );
 
   const plan = isPremium ? premiumPlan : standardPlan;
 
@@ -28,7 +32,7 @@ const Datos = () => {
 
   const LinkHandler = () => {
     dispatch({ type: types.changePlan });
-  }
+  };
 
   return (
     <div className={classes.data}>

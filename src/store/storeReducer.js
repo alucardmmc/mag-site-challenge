@@ -42,6 +42,7 @@ export const initialStore = {
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
     },
   ],
+  hasSubmitted: false,
 };
 
 const storeReducer = (state, action) => {
@@ -49,7 +50,12 @@ const storeReducer = (state, action) => {
     case types.changePlan:
       return {
         ...state,
-        isPremium: !state.isPremium
+        isPremium: !state.isPremium,
+      }
+    case types.formSubmitted:
+      return {
+        ...state,
+        hasSubmitted: true,
       }
     default:
       return state;
