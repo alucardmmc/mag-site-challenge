@@ -19,3 +19,10 @@ Este repositorio es para un desafio de Front-End.
 - [x] Utilizar el _Context API_ para manejar el estado de la aplicación
 - [x] Proteger la página de **confirmacion** de ser ingresada por el url
 - [x] Hacer uso de _Code Splitting_
+
+## Tareas por Realizar (Bonus)
+
+- [ ] Comentar la toma de decisiones y mejoras para una siguiente versión
+- [ ] Crear suite de tests para los componentes
+- [ ] Desplegar la aplicación usando _Netlify / Heroku / Zeit_
+- [ ] La aplicación es una PWA
