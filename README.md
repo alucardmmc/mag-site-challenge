@@ -6,14 +6,14 @@ Este repositorio es para un desafio de Front-End.
 
 - [x] Añadir react-router-dom
 - [x] Crear el _Header_
-- [ ] Crear la página **suscripcion**
-  - [ ] Crear el _Toggle Switch_
-  - [ ] Crear los _Planes de Suscripcion_
-- [ ] Crear la página **datos**
-  - [ ] Crear el _formulario_
-  - [ ] Crear _validaciones_ para el _formulario_
-  - [ ] Crear el _click trigger pop-up_  
+- [x] Crear la página **suscripcion**
+  - [x] Crear el _Toggle Switch_
+  - [x] Crear los _Planes de Suscripcion_
+- [x] Crear la página **datos**
+  - [x] Crear el _formulario_
+  - [x] Crear _validaciones_ para el _formulario_
+  - [x] Crear el _"Modal" para cambiar plan_  
 - [ ] Crear la página **confirmacion**
   - [ ] Crear el _mensaje de confirmacion_
 - [x] Realizar el routing de las paginas
-- [ ] Utilizar el _Context API_ para manejar el estado de la aplicación
+- [x] Utilizar el _Context API_ para manejar el estado de la aplicación
