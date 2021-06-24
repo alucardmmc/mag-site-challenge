@@ -146,3 +146,6 @@ Este proyecto definitivamente se puede mejorar:
 
 ---
   
+## Página:
+  
+[Mag. Site en Vercel](https://mag-site-challenge.vercel.app/suscripcion)
