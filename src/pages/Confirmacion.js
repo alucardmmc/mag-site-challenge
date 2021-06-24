@@ -42,10 +42,10 @@ const Confirmacion = () => {
           amet sodales massa, nec suscipit erat. Phasellus quis eros eget velit
           dictum tristique sit amet tincidunt erat.
         </p>
-        <Link to="/plan">Ir a ver mi plan</Link>
+        <Link to="/suscripcion">Ir a ver mi plan</Link>
       </div>
       <div className={classes['link__page']}>
-        <Link to="/">Ir a Mag.pe</Link>
+        <Link to="/suscripcion">Ir a Mag.pe</Link>
       </div>
     </div>
   );
