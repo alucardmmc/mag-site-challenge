@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-d
 import NavBar from './components/navbar/NavBar';
 import Suscripcion from './pages/Suscripcion';
 import Datos from './pages/Datos';
+import Confirmacion from './pages/Confirmacion';
 
 import StoreProvider from './store/StoreProvider';
 
@@ -21,6 +22,9 @@ function App() {
               </Route>
               <Route path="/datos">
                 <Datos />
+              </Route>
+              <Route path="/confirmacion">
+                <Confirmacion />
               </Route>
               <Route path="/">
                 <Redirect to="/suscripcion" />

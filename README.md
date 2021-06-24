@@ -13,7 +13,7 @@ Este repositorio es para un desafio de Front-End.
   - [x] Crear el _formulario_
   - [x] Crear _validaciones_ para el _formulario_
   - [x] Crear el _"Modal" para cambiar plan_  
-- [ ] Crear la página **confirmacion**
-  - [ ] Crear el _mensaje de confirmacion_
+- [x] Crear la página **confirmacion**
+  - [x] Crear el _mensaje de confirmacion_
 - [x] Realizar el routing de las paginas
 - [x] Utilizar el _Context API_ para manejar el estado de la aplicación

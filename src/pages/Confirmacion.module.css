@@ -1,0 +1,69 @@
+.confirmation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.confirmation svg {
+  height: 10rem;
+  width: 10rem;
+  fill: var(--clr-accent);
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message__welcome,
+.message__plan,
+.message__price {
+  font-weight: 700;
+}
+
+.message__welcome {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.message__plan {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  color: var(--clr-accent);
+}
+
+.message__price {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--clr-accent);
+}
+
+.message p {
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 2rem;
+  margin-bottom: 1rem;
+}
+
+.message a {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--clr-text-black);
+  font-weight: 700;
+}
+
+.link__page {
+  position: fixed;
+  bottom: 0;
+  padding: 2rem;
+}
+
+.link__page a {
+  color: var(--clr-text-black);
+  font-size: 0.85rem;
+}
