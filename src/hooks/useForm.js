@@ -1,16 +1,16 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import validateForm from './validateForm';
 
-const useForm = () => {
+const useForm = (validate, callback) => {
   const [values, setValues] = useState({
     name: '',
     creditCard: '',
     expirationDate: '',
     securityCode: '',
-    submitted: false,
   });
 
   const [errors, setErrors] = useState({});
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,22 +19,20 @@ const useForm = () => {
       ...values,
       [name]: value,
     });
-
-    if (values.submitted === true) {
-      setErrors(validateForm(values));
-    }
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    setValues({
-      ...values,
-      submitted: true,
-    })
-
     setErrors(validateForm(values));
+    setSubmitted(true);
   };
+
+  useEffect(() => {
+    if (Object.keys(errors).length === 0 && submitted) {
+      callback();
+    }
+  }, [errors, submitted, callback])
 
   return { handleChange, values, handleSubmit, errors };
 };

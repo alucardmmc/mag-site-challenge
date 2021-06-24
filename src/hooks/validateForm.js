@@ -61,7 +61,7 @@ const validateForm = (values) => {
   }
 
   // CVC
-  if (!values.securityCode.trim()) {
+  if (values.securityCode.trim() === '') {
     errors.securityCode = emptyValue;
   } else if (!isSecurityCode(values.securityCode)) {
     errors.securityCode = 'Ingrese CVV válido.'

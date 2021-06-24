@@ -6,13 +6,19 @@ import classes from './Datos.module.css';
 import useForm from '../hooks/useForm';
 import validateForm from '../hooks/validateForm';
 import PlanDetails from '../components/plans/PlanDetails';
+import { useHistory } from 'react-router-dom';
 
 const Datos = () => {
+  const history = useHistory();
   const [openModal, setOpenModal] = useState(false);
   const [store, dispatch] = useContext(StoreContext);
   const { isPremium, standardPlan, premiumPlan, planDetails } = store;
 
-  const { handleChange, values, handleSubmit, errors } = useForm(validateForm);
+  const submitForm = () => {
+    history.push('/confirmacion');
+  }
+
+  const { handleChange, values, handleSubmit, errors } = useForm(validateForm, submitForm);
 
   const plan = isPremium ? premiumPlan : standardPlan;
 
