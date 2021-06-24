@@ -5,7 +5,7 @@ export const types = {
 export const initialStore = {
   isPremium: false,
   standardPlan: {
-    name: 'Estandar',
+    name: 'Estándar',
     currency: 'S/',
     price: 29,
     period: 'al mes',

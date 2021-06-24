@@ -1,26 +1,29 @@
 import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
+import { useHistory } from 'react-router';
 
 const NavLinks = (props) => {
-  const ClickLinkHandler = () => (
-    props.isMobile && props.onClickLink()
-  );
+  const history = useHistory();
+
+  const ClickMainHandler = () => {
+    props.isMobile && props.onClickLink();
+    history.push('/');
+  };
+
+  const ClickSuscripcionHandler = () => {
+    props.isMobile && props.onClickLink();
+    history.push('/suscripcion');
+  };
 
   return (
     <ul>
-      <li onClick={ClickLinkHandler}>
+      <li onClick={ClickMainHandler}>
         <Link to="/">Inicio</Link>
       </li>
-      <li onClick={ClickLinkHandler}>
+      <li onClick={ClickSuscripcionHandler}>
         <Link to="/suscripcion">Suscripción</Link>
       </li>
     </ul>
   )
 };
-
-NavLinks.propTypes = {
-  isMobile: PropTypes.bool.isRequired,
-  onClickLink: PropTypes.func,
-}
 
 export default NavLinks;
