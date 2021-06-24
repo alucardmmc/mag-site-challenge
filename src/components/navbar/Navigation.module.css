@@ -1,0 +1,30 @@
+.navigation {
+  display: none;
+}
+
+@media (min-width:480px) {
+  .navigation {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--clr-bg-black);
+  }
+  
+  .navigation ul li {
+    margin: 0 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 25px;
+  }
+
+  .navigation ul li a {
+    text-decoration: none;
+    color: var(--clr-accent);
+  }
+}

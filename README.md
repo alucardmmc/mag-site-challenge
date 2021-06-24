@@ -4,9 +4,8 @@ Este repositorio es para un desafio de Front-End.
 
 ## Tareas por Realizar
 
-- [ ] Añadir react-router-dom
-- [ ] Crear el _Header_
-- [ ] Crear el _Footer_
+- [x] Añadir react-router-dom
+- [x] Crear el _Header_
 - [ ] Crear la página **suscripcion**
   - [ ] Crear el _Toggle Switch_
   - [ ] Crear los _Planes de Suscripcion_
@@ -16,5 +15,5 @@ Este repositorio es para un desafio de Front-End.
   - [ ] Crear el _click trigger pop-up_  
 - [ ] Crear la página **confirmacion**
   - [ ] Crear el _mensaje de confirmacion_
-- [ ] Realizar el routing de las paginas
+- [x] Realizar el routing de las paginas
 - [ ] Utilizar el _Context API_ para manejar el estado de la aplicación
