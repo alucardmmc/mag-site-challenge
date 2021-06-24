@@ -24,5 +24,5 @@ Este repositorio es para un desafio de Front-End.
 
 - [ ] Comentar la toma de decisiones y mejoras para una siguiente versión
 - [ ] Crear suite de tests para los componentes
-- [ ] Desplegar la aplicación usando _Netlify / Heroku / Zeit_
-- [ ] La aplicación es una PWA
+- [x] Desplegar la aplicación usando _Netlify / Heroku / Zeit_
+- [x] Hacer que la aplicación sea una PWA
