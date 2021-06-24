@@ -1,0 +1,15 @@
+.info__icon {
+  margin-right: 1rem;
+}
+
+.info__icon--unchecked {
+  fill: var(--clr-text-grey);
+}
+
+.info_details {
+  font-size: 0.85rem;
+}
+
+.info__details--unchecked {
+  color: var(--clr-text-grey);
+}
