@@ -1,0 +1,74 @@
+.card {
+  height: 10rem;
+  width: 20rem;
+  position: relative;
+}
+
+.card input {
+  appearance: none;
+  background-color: var(--clr-bg-white);
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  position: absolute;
+  box-shadow: 7px 7px 15px rgba(0, 0, 0);
+  cursor: pointer;
+}
+
+.card input::before {
+  content: '';
+  position: absolute;
+  height: 22px;
+  width: 22px;
+  background-color: #f9fafd;
+  border: 1px solid #e2e6f3;
+  border-radius: 50%;
+  top: 35px;
+  right: 20px;
+}
+
+.card input::after {
+  content: '';
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  background-color: transparent;
+  border-radius: 50%;
+  top: 39.5px;
+  right: 24.5px;
+}
+
+.card label {
+  position: absolute;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.card label h5 {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin: 0.9rem 0 1.25rem 0;
+}
+
+.card label h2 {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.card label h2 span {
+  font-size: 1rem;
+  color: var(--clr-bg-black);
+}
+
+.card input:hover {
+  transform: scale(1.05);
+}
+
+.card input:checked {
+  border: 3px solid var(--clr-accent);
+}
+
+.card input:checked::after {
+  background-color: var(--clr-accent);
+}

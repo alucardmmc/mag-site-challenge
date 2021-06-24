@@ -61,8 +61,19 @@
   font-weight: 500;
   font-size: 1rem;
   border: 0px;
+  cursor: pointer;
+}
+
+.card-button:hover,
+.card-button:active {
+  background-color: var(--clr-accent);
 }
 
 .card-button__cta {
   background-color: var(--clr-accent);
+}
+
+.card-button__cta:hover,
+.card-button__cta:active {
+  background-color: var(--clr-bg-black);
 }

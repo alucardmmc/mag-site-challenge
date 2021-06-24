@@ -1,74 +1,6 @@
-.data h1 {
-  padding-top: 2rem;
-  text-align: center;
-  font-size: 1.5rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
-
-.form__container {
-  display: grid;
-  column-gap: 0.5rem;
-  grid-template-columns: auto auto;
-  grid-template-rows: 6rem 6rem 6rem 3rem;
-  grid-template-areas: "name       name"
-                       "card       card"
-                       "expiration security"
-                       "button     button";
-  width: 20rem;
-  margin: 1rem auto;
-  max-width: 25rem;
-  padding: 1.25rem;
-}
-
-input {
-  width: 100%;
-  border: 2px solid var(--clr-bg-grey);
-  padding: 0.9rem 0.9rem;
-  margin-top: 0.3rem;
-  font-size: 1rem;
-  box-sizing: border-box;
-}
-
-label {
-  font-size: 0.8rem;
-  font-weight: 700;
-}
-
-.field__name {
-  grid-area: name;
-}
-
-.field__creditcard {
-  grid-area: card;
-}
-
-.field__expiration {
-  grid-area: expiration;
-}
-
-.field__security-code {
-  grid-area: security;
-}
-
-.error-input {
-  border: 2px solid var(--clr-accent);
-}
-
-.error-text {
-  color: var(--clr-accent);
-  font-size: 0.7rem;
-  font-weight: 400;
-  padding: 0.5rem 0;
-}
-
-.form__button {
-  grid-area: button;
-  background-color: var(--clr-bg-black);
-  color: var(--clr-text-white);
-  font-size: 1rem;
-  font-weight: 500;
-  border: 0px;
+.data__form {
+  display: flex;
+  flex-direction: column;
 }
 
 .modal {
@@ -87,6 +19,8 @@ label {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  max-width: 62.5rem;
+  margin: 0 auto;
 }
 
 .modal-body__title {
@@ -154,4 +88,39 @@ label {
   font-size: 0.8rem;
   font-weight: 400;
   padding: 1rem;
+}
+
+.desktop-container {
+  display: none;
+}
+
+@media (min-width:576px) {
+  .data {
+    display: flex;
+    justify-content: center;
+  }
+      
+  .mobile-container {
+    display: none;
+  }
+
+  .desktop-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: 2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .desktop-container {
+    margin-right: 4rem;
+  }
+}
+
+@media (min-width:1200px) {
+  .desktop-container {
+    margin-right: 8rem;
+  }
 }

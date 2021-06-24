@@ -1,0 +1,81 @@
+.form__title {
+  padding-top: 2rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  width: 20rem;
+  align-self: center;
+}
+
+.form__container {
+  display: grid;
+  column-gap: 0.5rem;
+  grid-template-columns: auto auto;
+  grid-template-rows: 6rem 6rem 6rem 3rem;
+  grid-template-areas: "name       name"
+                       "card       card"
+                       "expiration security"
+                       "button     button";
+  width: 20rem;
+  margin: 1rem auto;
+  max-width: 25rem;
+  padding: 1.25rem;
+}
+
+input {
+  width: 100%;
+  border: 2px solid var(--clr-bg-grey);
+  padding: 0.9rem 0.9rem;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+label {
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.field__name {
+  grid-area: name;
+}
+
+.field__creditcard {
+  grid-area: card;
+}
+
+.field__expiration {
+  grid-area: expiration;
+}
+
+.field__security-code {
+  grid-area: security;
+}
+
+.error-input {
+  border: 2px solid var(--clr-accent);
+}
+
+.error-text {
+  color: var(--clr-accent);
+  font-size: 0.7rem;
+  font-weight: 400;
+  padding: 0.5rem 0;
+}
+
+.form__button {
+  grid-area: button;
+  background-color: var(--clr-bg-black);
+  color: var(--clr-text-white);
+  font-size: 1rem;
+  font-weight: 500;
+  border: 0px;
+  cursor: pointer;
+}
+
+.form__button:hover,
+.form__button:active {
+  background-color: var(--clr-accent);
+}
