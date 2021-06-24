@@ -1,3 +1,4 @@
+import { useContext, lazy, Suspense } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,15 +7,15 @@ import {
 } from 'react-router-dom';
 
 import NavBar from './components/navbar/NavBar';
-import Suscripcion from './pages/Suscripcion';
-import Datos from './pages/Datos';
-import Confirmacion from './pages/Confirmacion';
 
 import { StoreContext } from './store/StoreProvider';
 
 import './App.css';
 import ProtectedRoute from './ProtectedRoute';
-import { useContext } from 'react';
+
+const Suscripcion = lazy(() => import('./pages/Suscripcion'));
+const Datos = lazy(() => import('./pages/Datos'));
+const Confirmacion = lazy(() => import('./pages/Confirmacion'));
 
 function App() {
   const [store, dispatch] = useContext(StoreContext);
@@ -26,20 +27,22 @@ function App() {
         <NavBar />
         <main>
           <Switch>
-            <Route path="/suscripcion">
-              <Suscripcion />
-            </Route>
-            <Route path="/datos">
-              <Datos />
-            </Route>
-            <ProtectedRoute
-              path="/confirmacion"
-              component={Confirmacion}
-              hasSubmitted={hasSubmitted}
-            />
-            <Route path="/">
-              <Redirect to="/suscripcion" />
-            </Route>
+            <Suspense fallback={<div>Loading Page...</div>}>
+              <Route path="/suscripcion">
+                <Suscripcion />
+              </Route>
+              <Route path="/datos">
+                <Datos />
+              </Route>
+              <ProtectedRoute
+                path="/confirmacion"
+                component={Confirmacion}
+                hasSubmitted={hasSubmitted}
+              />
+              <Route path="/">
+                <Redirect to="/suscripcion" />
+              </Route>
+            </Suspense>
           </Switch>
         </main>
       </div>

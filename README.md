@@ -17,3 +17,5 @@ Este repositorio es para un desafio de Front-End.
   - [x] Crear el _mensaje de confirmacion_
 - [x] Realizar el routing de las paginas
 - [x] Utilizar el _Context API_ para manejar el estado de la aplicación
+- [x] Proteger la página de **confirmacion** de ser ingresada por el url
+- [x] Hacer uso de _Code Splitting_
